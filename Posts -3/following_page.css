@@ -1,0 +1,171 @@
+body {
+    background-color:  #A0D5DF;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+.community{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+  nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .logo-image{
+    float: left;
+    margin-top: -10px;
+    margin-left: 50px;
+  }
+
+  nav ul{
+    float: left;
+    margin-top: 8px;
+    margin-left: 120px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 2px;
+    color:#1E94AC;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.image-button {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff00;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.image-button img {
+  width: 100%;
+  height: 50;
+}
+
+.image-button:hover {
+  background-color: #0000001c;
+}
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input[type="text"] {
+  float: right;
+  border: none;
+  padding: 10px 45px;
+  margin-right: 600px;
+  margin-top: 7px;
+  outline: none;
+  outline-color: #1E94AC;
+  outline-style: solid;
+  outline-width: 4px;
+}
+
+.Ask button {
+  float: right;
+  background-color: #1E94AC;
+  color: White;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 30px;
+  cursor: pointer;
+  margin-top: -37px;
+  margin-right: 300px;
+  white-space: nowrap;
+}
+
+.Ask button:hover {
+  background-color: #ccc;
+}
+.content {
+ padding: 20px ;
+  text-align: center;
+}
+  .community ul{
+    margin-top: -1000px;
+  margin-left: 110px;
+    align-self: center;
+  } 
+  .community li{
+    color: white;
+    cursor: pointer;
+  }
+  .list li {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box img{
+    margin-left: 30%;
+   margin-bottom: 20%;
+   width: 70px;  
+  }
+
+ 
+
+.box {
+
+    background-color: white;
+    border: 2px solid #1E94AC;
+    width: 800px;
+    height: 800px;
+    margin-left: 25%;
+    color: #1E94AC;
+  }
+
+
+  h3,p1 {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  p1{
+    color: #A0D5DF;
+  }
+
+  hr{
+    border: 2px solid #1E94AC;
+    width: 90%;
+  }
+
+  button{
+    background-color: #1E94AC;
+    border-radius: 20px;
+    width: 12%;
+    height: 20%;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.butt{
+  background-color: #1E94AC;
+  border-radius: 20px;
+  width: 80%;
+  height: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

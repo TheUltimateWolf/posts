@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #A0D5DF;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .community{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        .community ul{
+            margin-top: 60%;
+          margin-left: 110px;
+            align-self: center;
+          } 
+          .community li{
+            color: white;
+            cursor: pointer;
+          }
+
+          .list li {
+            padding: 0.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        nav{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding: 0px 100px;
+            position: fixed;
+            background-color: white;
+          
+        }
+        .logo-image{
+            float: left;
+            margin-top: -10px;
+            margin-left: 50px;
+        }
+        nav ul{
+            float: left;
+            margin-top: 8px;
+            margin-left: 120px;
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+        }
+        nav li a{
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 2px;
+            color:#1E94AC;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        .image-button {
+            display: block;
+            width: 35px;
+            height: 35px;
+            background-color: #ffffff00;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            transition: background-color 0.3s ease;
+          }
+          
+          .image-button img {
+            width: 100%;
+            height: 50;
+          }
+          
+          .image-button:hover {
+            background-color: #0000001c;
+          }
+          nav form {
+            display: flex;
+            align-items: center;
+          }
+          
+          nav form input[type="text"] {
+            float: right;
+            border: none;
+            padding: 10px 45px;
+            margin-right: 600px;
+            margin-top: 7px;
+            outline: none;
+            outline-color: #1E94AC;
+            outline-style: solid;
+            outline-width: 4px;
+          }
+
+          .Ask button {
+            float: right;
+            background-color: #1E94AC;
+            color: White;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 30px;
+            cursor: pointer;
+            margin-top: -37px;
+            margin-right: 300px;
+            white-space: nowrap;
+          }
+          
+          .Ask button:hover {
+            background-color: #ccc;
+          }
+          hr{
+            border: 2px solid #1E94AC;
+            width: 90%;
+          }
+
+         
+          
+          .box {
+           margin-top: -30%;
+            background-color: white;
+            border: 2px solid #1E94AC;
+            width: 800px;
+            height: 600px;
+            margin-left: 25%;
+            color: #1E94AC;
+          }
+          
+          
+        /* Styles for the question platform */
+      
+        .question {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .question p {
+            flex-grow: 1;
+            font-size: 16px;
+            margin-left: 40px;
+        }
+        .question button {
+            margin-left: 40px;
+            background-color: #1E94AC;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .question input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2{
+            margin-left: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="Logo.png" width="70" height="70" class="logo-image">
+            <ul class="image-list">
+                <li><a class="image-button" href="Home Page.html"><img src="Home Icon.svg" width="30" height="30"></a></li>
+                <li><a class="image-button" href="following page.html"><img src="Following Icon.svg" width="30" height="30"/></a></li>
+                <li><a class="image-button" href="Answer_page.html"><img src="Answer Icon selected.svg" width="30" height="30"/></a></li>
+                <li><a class="image-button" href="index.html"><img src="Community Icon.svg" width="30" height="30"/></a></li>
+                <li><a class="image-button" href="Notifications page.html"><img src="Notifications Icon.svg" width="30" height="30"/></a></li>
+            </ul>
+            <form>
+                <input type="text" placeholder="Search Posts">
+              </form>
+              <div class="Ask">
+                <button type="button">ASK A QUESTION</button>
+              </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="community">
+        <main>
+          
+            <ul class="list">
+             
+    
+               <li>Questions</li><hr><br><br>
+    
+                <li>Questions for you</li><hr><br><br>
+    
+                <li>Answer Requests</li><hr><br><br>
+    
+                <li>Drafts</li><hr><br><br>
+    
+               
+            </ul>
+        
+        </main>
+     </div>
+
+     <div class="box">
+
+        <h2>Questions For You</h2>
+       <hr>
+        <div class="question">
+            <p>1. What is life?</p>
+        </div>
+        <div class="question">
+            <button onclick="toggleInputBox(this)">Answer</button>
+            <button onclick="togglefollow(this)">Follow</button>
+            <button onclick="togglepass(this)">Pass</button>
+        </div>
+
+        <!-- Turquoise barrier -->
+       <hr>
+
+        <div class="question">
+            <p>2. What is death?</p>
+        </div>
+        <div class="question">
+            <button onclick="toggleInputBox(this)">Answer</button>
+            <button onclick="togglefollow(this)">Follow</button>
+            <button onclick="togglepass(this)">Pass</button>
+        </div>
+
+        <!-- Turquoise barrier -->
+        <hr>
+
+        <div class="question">
+            <p>3. Is there a point to this existence?</p>
+        </div>
+        <div class="question">
+            <button onclick="toggleInputBox(this)">Answer</button>
+            <button onclick="togglefollow(this)">Follow</button>
+            <button onclick="togglepass(this)">Pass</button>
+        </div>
+
+        <!-- Turquoise barrier -->
+        <hr>
+
+        <div class="question">
+            <p>4. Is murder really wrong?</p>
+        </div>
+        <div class="question">
+            <button onclick="toggleInputBox(this)">Answer</button>
+            <button onclick="togglefollow(this)">Follow</button>
+            <button onclick="togglepass(this)">Pass</button>
+        </div>
+        <!-- Repeat the above div for more questions -->
+
+
+        <script>
+            function toggleInputBox(button) {
+                const inputBox = button.parentElement.querySelector('input[type="text"]');
+                if (inputBox) {
+                    inputBox.remove();
+                } else {
+                    const newInputBox = document.createElement('input');
+                    newInputBox.setAttribute('type', 'text');
+                    newInputBox.setAttribute('placeholder', 'Type your answer');
+                    button.parentElement.appendChild(newInputBox);
+                }
+            }
+    
+            function togglefollow(button) {
+                button.textContent = button.textContent === 'Following' ? 'Follow' : 'Following';
+            }
+    
+            function togglepass(button) {
+                if (button.style.backgroundColor === 'red') {
+                    button.style.backgroundColor = ''; // Change back to normal color
+                } else {
+                    button.style.backgroundColor = 'red';
+                }
+            }
+        </script>
+     </div>
+
+     
+</body>
+</html>
